@@ -10,11 +10,12 @@
                 "/usr/local/include",
                 "/usr/local/Cellar/mcrypt/",
                 "/opt/local/include/",
+                "./libmcrypt",
                 "<!(node -e \"require('nan')\")"
             ],
             "link_settings": {
                 "libraries": [
-                    "-lmcrypt",
+                    "-l../libmcrypt_a",
                     "-L/opt/local/lib/ -L/usr/local/lib",
                 ]
             }
